@@ -52,7 +52,7 @@ randomGenerators() {
 reStartGame() {
     this.randomGenerators();
             this.winCount = 0;
-            $('td').css('transform', 'none').removeClass('arrow diamond disabled').addClass('unknown');
+            $('div').css('transform', 'none').removeClass('arrow diamond disabled').addClass('unknown');
             }
 
 clickHandler = (e) => {
