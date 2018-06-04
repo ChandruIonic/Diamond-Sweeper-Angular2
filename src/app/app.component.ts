@@ -56,11 +56,9 @@ reStartGame() {
             }
 
 clickHandler = (e) => {
-	console.log("handru");
 	
         if (e.target.nodeName == 'DIV') {
             this.winCount++;
-            console.log("before")
             if (this.diamondSet[e.target.id]) {
                 e.target.className = "cell diamond disabled";
                 delete this.diamondSet[e.target.id];
